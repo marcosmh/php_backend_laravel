@@ -14,3 +14,19 @@
 ## Comandos
 
 * php artisan make:controller BackendController
+
+
+## Migrations
+
+* php artisan make:migration create_product_table
+
+* php artisan make:migration add_price_to_product_table --table=product
+
+* php artisan migrate:rollback
+
+* php artisan make:migration create_category_table
+
+* php artisan make:migration add_category_id_to_product_table --table=product
+
+
+* php artisan migrate
