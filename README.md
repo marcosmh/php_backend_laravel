@@ -30,3 +30,28 @@
 
 
 * php artisan migrate
+
+
+## Seeders
+
+* php artisan make:seeder CategoryTable
+
+* php artisan db:seed
+
+* php artisan migrate:fresh --seed
+
+* php artisan make:seeder ProductTableSeeder
+
+## Models
+
+* php artisan make:model Category
+
+* php artisan make:model Product
+
+## Factories
+
+* php artisan make:factory CategoryFactory
+
+* php artisan make:factory ProductFactory
+
+* php artisan migrate:fresh --seed
