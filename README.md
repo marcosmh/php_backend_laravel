@@ -55,3 +55,10 @@
 * php artisan make:factory ProductFactory
 
 * php artisan migrate:fresh --seed
+
+
+## Eloquent
+
+* php artisan make:controller QueriesController
+
+

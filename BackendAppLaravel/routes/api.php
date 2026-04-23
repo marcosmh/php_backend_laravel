@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BackendController;
+use App\Http\Controllers\QueriesController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -17,5 +18,25 @@ Route::Post("/backend", [BackendController::class, "create"]);
 Route::Put("/backend/{id}", [BackendController::class, "update"]);
 
 Route::Delete("/backend/{id}", [BackendController::class, "delete"]);
+
+// Queries
+
+Route::get("/query",[QueriesController::class,"get"]);
+
+Route::get("/query/{id}",[QueriesController::class,"getById"]);
+
+Route::get("/query/method/names",[QueriesController::class,"getNames"]);
+
+Route::get("/query/method/search/{name}/{price}",[QueriesController::class,"searchNames"]);
+
+Route::get("/query/method/searchString/{value}",[QueriesController::class,"searchString"]);
+
+Route::get("/query/method/searchStringOr/{value}",[QueriesController::class,"searchStringOR"]);
+
+Route::post("/query/method/advancedSearch",[QueriesController::class,"advancedSearch"]);
+
+Route::get("/query/method/searchJoin",[QueriesController::class,"searchJoin"]);
+
+Route::get("/query/method/searchGroupBy",[QueriesController::class,"searchGroupBy"]);
 
 
