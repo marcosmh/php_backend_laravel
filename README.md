@@ -62,3 +62,6 @@
 * php artisan make:controller QueriesController
 
 
+## CRUD
+
+* php artisan make:controller ProductoController

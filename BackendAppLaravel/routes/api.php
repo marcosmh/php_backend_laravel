@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BackendController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\QueriesController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,5 +39,9 @@ Route::post("/query/method/advancedSearch",[QueriesController::class,"advancedSe
 Route::get("/query/method/searchJoin",[QueriesController::class,"searchJoin"]);
 
 Route::get("/query/method/searchGroupBy",[QueriesController::class,"searchGroupBy"]);
+
+// CRUD Product
+
+Route::apiResource("/product",ProductController::class);
 
 
